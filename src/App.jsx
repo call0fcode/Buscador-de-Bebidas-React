@@ -8,20 +8,23 @@ import ListaRecetas from "./components/ListaRecetas";
 // Contexts
 import CategoriasProvider from "./context/CategoriasContext";
 import RecetasProvider from "./context/RecetasContext";
+import ModalProvider from "./context/ModalContext";
 
 function App() {
   return (
     <CategoriasProvider>
       <RecetasProvider>
-        <Header />
+        <ModalProvider>
+          <Header />
 
-        <div className="container mt-5">
-          <div className="row">
-            <Formulario />
+          <div className="container mt-5">
+            <div className="row">
+              <Formulario />
+            </div>
+
+            <ListaRecetas />
           </div>
-
-          <ListaRecetas />
-        </div>
+        </ModalProvider>
       </RecetasProvider>
     </CategoriasProvider>
   );
