@@ -1,4 +1,6 @@
 import React, { createContext, useState, useEffect } from "react";
+
+// 3rd-party libraries
 import axios from "axios";
 
 export const CategoriasContext = createContext();
