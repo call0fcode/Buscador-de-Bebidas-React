@@ -3,6 +3,7 @@ import { useState } from "react";
 // Components
 import Header from "./components/Header";
 import Formulario from "./components/Formulario";
+import ListaRecetas from "./components/ListaRecetas";
 
 // Contexts
 import CategoriasProvider from "./context/CategoriasContext";
@@ -18,6 +19,8 @@ function App() {
           <div className="row">
             <Formulario />
           </div>
+
+          <ListaRecetas />
         </div>
       </RecetasProvider>
     </CategoriasProvider>
